@@ -146,7 +146,7 @@ body {
     text-transform: none; /* Normal case heading */
     border-bottom: none; /* No border under heading */
     margin-bottom: 10px; /* Less space below heading */
-    font-weight: 400; /* Lighter font weight */
+    font-weight: 600; /* Lighter font weight */
     letter-spacing: 0.5px;
 }
 
