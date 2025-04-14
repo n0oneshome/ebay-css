@@ -1,1 +1,143 @@
+/* Global Styles */
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #e9e9e9; /* Light industrial grey background */
+	color: #222; /* Dark text */
+	line-height: 1.6;
+	font-weight: 400;
+}
 
+/* Main Container */
+.listing-container {
+	max-width: 960px; /* Wider container */
+	margin: 30px auto;
+	padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+	background-color: #333a45; /* Dark slate/charcoal */
+	border-radius: 0; /* Sharp corners */
+	color: #f0f0f0; /* Off-white text */
+	padding: 25px 30px;
+	margin-bottom: 40px;
+	text-align: left;
+	border-bottom: 4px solid #5f6b7a; /* Muted blue-grey border */
+}
+
+.header h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+	margin: 0 0 8px 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.header h2 {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	opacity: 0.8;
+}
+
+/* Features Section */
+.featuresbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; /* Distribute space */
+	gap: 25px; /* Gap between boxes */
+	margin: 40px 0;
+	padding: 0;
+}
+
+/* Feature Box Styling */
+.feature {
+	background-color: #f8f8f8; /* Very light grey, almost white */
+	border-radius: 0; /* Sharp corners */
+	border: 1px solid #c5c5c5; /* Medium grey border */
+	padding: 25px;
+	width: calc(50% - 13px); /* Two columns, adjusted for gap */
+	min-width: 300px;
+	box-sizing: border-box;
+    margin-bottom: 25px; /* Add bottom margin for spacing when wrapping */
+}
+
+.feature.placeholder {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    border: none;
+    margin: 0;
+    min-height: 0; /* Ensure it truly collapses */
+}
+
+
+.feature h3 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 18px;
+	color: #333a45; /* Match header background */
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #cccccc; /* Lighter grey underline */
+}
+
+.feature ul {
+	list-style-type: none; /* Remove default bullets */
+	padding: 0;
+	margin: 0;
+}
+
+.feature li {
+	margin-bottom: 10px;
+	padding-left: 0; /* No extra indent needed */
+	position: relative;
+	font-size: 15px;
+	color: #444; /* Slightly softer dark grey */
+}
+
+/* Optional: Add custom bullets if desired */
+/*
+.feature li::before {
+	content: "\25A0"; // Black Square
+	position: absolute;
+	left: -15px;
+	top: 1px;
+	font-size: 10px;
+	color: #5f6b7a; // Muted blue-grey
+}
+*/
+
+.feature li strong {
+	font-weight: 700;
+	color: #222; /* Darkest text for emphasis */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.header h1 { font-size: 24px; }
+    .header h2 { font-size: 14px; }
+    .featuresbox { gap: 20px; }
+    .feature {
+		width: 100%; /* Full width on smaller screens */
+        padding: 20px;
+        margin-bottom: 20px;
+	}
+    .feature h3 { font-size: 16px; margin-bottom: 15px; }
+    .feature li { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+    .header { padding: 20px; }
+	.header h1 { font-size: 20px; }
+    .header h2 { font-size: 13px; }
+    .listing-container { padding: 0 15px; }
+}
