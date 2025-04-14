@@ -121,6 +121,37 @@ body {
 	color: #222; /* Darkest text for emphasis */
 }
 
+
+/* Compact Feature Styling */
+.feature-compact {
+    background-color: #f9f7f3; /* Slightly lighter background */
+    border: 1px solid #eae5dd; /* Lighter border */
+    box-shadow: none; /* No shadow */
+    padding: 15px; /* Reduced padding */
+}
+
+.feature-compact h3 {
+    font-size: 14px; /* Smaller heading */
+    color: #777; /* Greyer heading color */
+    text-transform: none; /* Normal case heading */
+    border-bottom: none; /* No border under heading */
+    margin-bottom: 10px; /* Less space below heading */
+    font-weight: 400; /* Lighter font weight */
+    letter-spacing: 0.5px;
+}
+
+.feature-compact p {
+    font-size: 13px; /* Smaller paragraph text */
+    line-height: 1.5;
+    color: #666; /* Lighter text color */
+    margin-bottom: 0.8em; /* Slightly less space between paragraphs */
+}
+
+.feature-compact p:last-child {
+    margin-bottom: 0; /* No margin after last paragraph */
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
 	.header h1 { font-size: 24px; }
@@ -140,4 +171,8 @@ body {
 	.header h1 { font-size: 20px; }
     .header h2 { font-size: 13px; }
     .listing-container { padding: 0 15px; }
+
+	.feature-compact { padding: 12px; }
+     .feature-compact h3 { font-size: 13px; margin-bottom: 8px; }
+     .feature-compact p { font-size: 12px; }
 }
