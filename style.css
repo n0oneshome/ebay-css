@@ -141,47 +141,51 @@ body {
 
 /* Compact Feature Styling */
 .feature-compact {
-  background-color: #f9f7f3; /* Slightly lighter background */
-  border: 1px solid #eae5dd; /* Lighter border */
-  box-shadow: none; /* No shadow */
-  padding: 15px; /* Reduced padding */
+    background-color: #f9f7f3; /* Slightly lighter background */
+    border: 1px solid #eae5dd; /* Lighter border */
+    box-shadow: none; /* No shadow */
+    padding: 15px; /* Reduced padding */
 }
 
 .feature-compact h3 {
-  font-size: 14px; /* Smaller heading */
-  color: #777; /* Greyer heading color */
-  text-transform: none; /* Normal case heading */
-  border-bottom: none; /* No border under heading */
-  margin-bottom: 10px; /* Less space below heading */
-  font-weight: 600; /* Lighter font weight */
-  letter-spacing: 0.5px;
+    font-size: 14px; /* Smaller heading */
+    color: #777; /* Greyer heading color */
+    text-transform: none; /* Normal case heading */
+    border-bottom: none; /* No border under heading */
+    margin-bottom: 10px; /* Less space below heading */
+    font-weight: 400; /* Lighter font weight */
+    letter-spacing: 0.5px;
 }
 
 .feature-compact p {
-  font-size: 13px; /* Smaller paragraph text */
-  line-height: 1.5;
-  color: #666; /* Lighter text color */
-  margin-bottom: 0.8em; /* Slightly less space between paragraphs */
+    font-size: 13px; /* Smaller paragraph text */
+    line-height: 1.5;
+    color: #666; /* Lighter text color */
+    margin-bottom: 0.8em; /* Slightly less space between paragraphs */
 }
 
 .feature-compact p:last-child {
-  margin-bottom: 0; /* No margin after last paragraph */
+    margin-bottom: 0; /* No margin after last paragraph */
 }
 
 /* Responsive Design */
-/* The 992px breakpoint rule for width is no longer needed as 50% is the default */
-
 @media (max-width: 600px) {
-	.header { padding: 20px 15px; }
+	.header { padding: 18px 15px; }
 	.header h1 { font-size: 22px; }
 	.header h2 { font-size: 16px; }
-	.featuresbox { gap: 20px; } /* Adjust gap for smaller screens */
+	.featuresbox { gap: 15px; }
 	.feature {
-		/* --- CHANGE HERE: Override to 1 column --- */
-		width: 100%; /* Full width on small screens */
-		padding: 20px;
-		 /* No need to adjust min-width here as it's 100% */
+		width: 100%;
+		padding: 18px;
 	}
-	 .feature h3 { font-size: 16px; margin-bottom: 15px; }
+	 .feature h3 {
+         font-size: 16px;
+         margin-bottom: 12px;
+    }
 	 .feature li { font-size: 14px; }
+     .feature p { font-size: 14px; }
+
+     .feature-compact { padding: 12px; }
+     .feature-compact h3 { font-size: 13px; margin-bottom: 8px; }
+     .feature-compact p { font-size: 12px; }
 }
