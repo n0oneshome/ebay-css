@@ -165,6 +165,31 @@ body {
     font-weight: 700;
 }
 
+
+  footer {
+      clear: both;
+      border-top: 1px solid rgba(108, 111, 117, 0.5);
+      color: #5f6675;
+      margin-top: 20px;
+      padding-top: 5px;
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+
+
+  .right{
+      float:right;
+      padding-bottom: 10px;
+      padding-left: 15px;
+
+  }
+
+  .left{
+      float:left;
+      padding-left: 15px;
+      padding-bottom: 10px;
+  }
+
 /* Responsive Design */
 @media (max-width: 768px) {
 	.header h1 { font-size: 24px; }
