@@ -121,13 +121,21 @@ body {
 	color: #222; /* Darkest text for emphasis */
 }
 
-
 /* Compact Feature Styling */
 .feature-compact {
     background-color: #f9f7f3; /* Slightly lighter background */
-    border: 1px solid #eae5dd; /* Lighter border */
+    /* border: 1px solid #eae5dd; */ /* Keep border commented out as requested */
+    border-radius: 10px; /* Changed 100 to 10px for 'slightly rounded' */
     box-shadow: none; /* No shadow */
     padding: 15px; /* Reduced padding */
+
+    /* --- Add these lines --- */
+    width: 70%;        /* Set desired width (e.g., 70% of container) */
+    max-width: 600px;   /* Optional: prevents it getting too wide */
+    margin-left: auto;  /* Automatically calculate left margin */
+    margin-right: auto; /* Automatically calculate right margin */
+    margin-bottom: 25px;/* Add back bottom margin for spacing below it */
+    /* --- End added lines --- */
 }
 
 .feature-compact h3 {
@@ -136,21 +144,26 @@ body {
     text-transform: none; /* Normal case heading */
     border-bottom: none; /* No border under heading */
     margin-bottom: 10px; /* Less space below heading */
-    font-weight: 400; /* Lighter font weight */
+    font-weight: 600; /* Lighter font weight */
     letter-spacing: 0.5px;
 }
 
+/* Add this rule for paragraphs within compact feature */
 .feature-compact p {
-    font-size: 13px; /* Smaller paragraph text */
+    font-size: 13px;
     line-height: 1.5;
-    color: #666; /* Lighter text color */
-    margin-bottom: 0.8em; /* Slightly less space between paragraphs */
+    color: #555;
+    margin-bottom: 0.8em;
 }
-
 .feature-compact p:last-child {
-    margin-bottom: 0; /* No margin after last paragraph */
+    margin-bottom: 0;
 }
 
+/* Ensure strong text inside compact is styled if needed */
+.feature-compact p strong {
+    color: #333;
+    font-weight: 700;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
